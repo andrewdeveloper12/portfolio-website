@@ -1,0 +1,258 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "services": "Services",
+    "blog": "Blog"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Andrew Osama",
+    "title": "Professional Web Developer",
+    "description": "I develop modern and interactive web applications using the latest technologies",
+    "viewWork": "View Work",
+    "contactMe": "Contact Me"
+  },
+  "about": {
+    "title": "Who I am?",
+    "hero": {
+      "title": "About Me"
+    },
+    "description": "A web developer specializing in modern application development using React and TypeScript. I love turning ideas into interactive, beautiful applications that deliver exceptional user experiences.",
+    "features": {
+      "cleanCode": {
+        "title": "Clean Development",
+        "description": "Writing clean, maintainable code using best practices and industry standards"
+      },
+      "creativeDesign": {
+        "title": "Creative Design",
+        "description": "Designing attractive, intuitive interfaces that enhance user engagement"
+      },
+      "fastPerformance": {
+        "title": "Fast Performance",
+        "description": "Building optimized applications that load quickly and run smoothly"
+      }
+    },
+    "stats": {
+      "experience": "Years of Experience",
+      "projects": "Completed Projects",
+      "clients": "Happy Clients",
+      "coffee": "Cups of Coffee"
+    },
+    "story": {
+      "title": "My Journey",
+      "paragraph1": "My journey in programming began over 3 years ago, developing skills across modern technologies.",
+      "paragraph2": "I believe continuous learning is key to success, always staying updated with tech advancements.",
+      "paragraph3": "My goal is to create innovative solutions that help clients achieve their business objectives."
+    }
+  },
+  "skills": {
+    "title": "My Technical Skills",
+    "subtitle": "Technologies and tools I use to build projects"
+  },
+ "projects": {
+    "title": "My Projects",
+    "subtitle": "Here are some of my recent projects. Each one represents a unique challenge and solution.",
+    "code": "Code",
+    "demo": "Demo",
+    "viewAll": "View All Projects",
+    "items": [
+      {
+        "title": "Yummy Restaurant App",
+        "description": "A food ordering application with menu browsing, cart functionality, and order tracking."
+      },
+      {
+        "title": "Mealify Food Delivery",
+        "description": "Complete food delivery platform with restaurant listings and payment integration."
+      },
+      {
+        "title": "Farid Leather E-commerce",
+        "description": "E-commerce website for leather products with shopping cart and admin dashboard."
+      },
+      {
+        "title": "Medical Checkup System",
+        "description": "Comprehensive medical system for managing patient records and lab results."
+      },
+      {
+        "title": "Daniels Portfolio",
+        "description": "Creative portfolio website with animations and project showcase."
+      },
+      {
+        "title": "Devfolio Portfolio Template",
+        "description": "Developer portfolio template with multiple sections and dark mode."
+      }
+    ]
+  },
+  "services": {
+    "title": "My Services",
+    "description": "Comprehensive digital solutions tailored to your business needs",
+    "webDevelopment": {
+      "title": "Web Development",
+      "description": "Custom web applications built with modern frameworks and best practices for optimal performance and scalability."
+    },
+    "mobileApps": {
+      "title": "Mobile Apps",
+      "description": "Cross-platform mobile applications with native performance using React Native and Flutter."
+    },
+    "uiDesign": {
+      "title": "UI/UX Design",
+      "description": "Beautiful and intuitive interfaces designed for optimal user experience and conversion rates."
+    },
+    "backendDevelopment": {
+      "title": "Backend Development",
+      "description": "Robust server-side solutions with scalable architecture and secure APIs for your business logic."
+    },
+    "cloudSolutions": {
+      "title": "Cloud Solutions",
+      "description": "Cloud infrastructure setup and deployment with AWS, Azure, and Google Cloud Platform."
+    },
+    "technicalConsulting": {
+      "title": "Technical Consulting",
+      "description": "Strategic technology guidance to help you make informed decisions about your digital products."
+    },
+    "features": {
+      "responsiveDesign": "Responsive Design",
+      "seoOptimization": "SEO Optimization",
+      "performanceOptimization": "Performance Optimization",
+      "crossBrowserCompatibility": "Cross-browser Compatibility",
+      "iosAndroid": "iOS & Android Development",
+      "reactNative": "React Native Expertise",
+      "nativePerformance": "Native-like Performance",
+      "appStoreDeployment": "App Store Deployment",
+      "userExperience": "User Experience Design",
+      "wireframing": "Wireframing & Prototyping",
+      "designSystems": "Design Systems",
+      "accessibility": "Accessibility Standards",
+      "restfulApis": "RESTful APIs",
+      "databaseDesign": "Database Design",
+      "authentication": "Authentication Systems",
+      "cloudIntegration": "Cloud Integration",
+      "awsAzure": "AWS & Azure",
+      "docker": "Docker Containers",
+      "ciCd": "CI/CD Pipelines",
+      "monitoring": "Monitoring & Analytics",
+      "architecture": "Architecture Planning",
+      "techStack": "Technology Stack Selection",
+      "codeReview": "Code Review",
+      "audits": "Performance Audits"
+    },
+    "process": {
+      "title": "My Development Process",
+      "steps": {
+        "discovery": {
+          "title": "Discovery",
+          "description": "Understanding your requirements and business goals"
+        },
+        "planning": {
+          "title": "Planning",
+          "description": "Creating detailed project roadmap and timeline"
+        },
+        "development": {
+          "title": "Development",
+          "description": "Building your solution with clean code practices"
+        },
+        "delivery": {
+          "title": "Delivery",
+          "description": "Testing, deployment and ongoing support"
+        }
+      }
+    }
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "features": "Key Features"
+  },
+    "process": {
+      "title": "My Development Process",
+      "steps": {
+        "discovery": {
+          "title": "Discovery",
+          "description": "Understanding your requirements and goals"
+        },
+        "planning": {
+          "title": "Planning",
+          "description": "Creating detailed project roadmap and timeline"
+        },
+        "development": {
+          "title": "Development",
+          "description": "Building your solution with best practices"
+        },
+        "delivery": {
+          "title": "Delivery",
+          "description": "Testing, deployment, and ongoing support"
+        }
+      }
+    },
+  "contact": {
+    "title": "Contact",
+    "infoTitle": "Contact Information",
+    "description": "Have a project in mind or want to discuss potential opportunities? Feel free to reach out!",
+    "details": {
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location",
+      "city": "Cairo, Massra",
+      "workingHours": "Working Hours",
+      "hours": "Sunday - Thursday: 9:00 AM - 6:00 PM"
+    },
+    "form": {
+      "title": "Send Message",
+      "name": "Your Name",
+      "email": "Email Address",
+      "serviceType": "Service Type",
+      "selectService": "Select a Service",
+      "message": "Your Message",
+      "send": "Send Message"
+    },
+    "services": [
+      "Web Development",
+      "Mobile Applications",
+      "UI/UX Design",
+      "Technical Consultation",
+      "Maintenance & Development",
+      "Other"
+    ],
+    "map": "Map Location",
+    "whyChoose": "Why Choose Me?",
+    "benefits": [
+      "Over 1 years of experience",
+      "More than 30 completed projects",
+      "Continuous technical support",
+      "Competitive pricing"
+    ]
+  },
+  "footer": {
+    "contactTitle": "Contact Information",
+    "contactDescription": "Full-stack developer passionate about creating innovative web solutions. Let's build something amazing together.",
+    "importantLinks": "Quick Links",
+    "home": "Home",
+    "projects": "Projects",
+    "services": "Services",
+    "contact": "Contact",
+    "followMe": "Connect With Me",
+    "rights": "All rights reserved.",
+    "company": "Company",
+    "about": "About Us",
+    "careers": "Careers",
+    "blog": "Blog",
+    "resources": "Resources",
+    "documentation": "Documentation",
+    "helpCenter": "Help Center",
+    "community": "Community",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookies",
+    "newsletter": "Newsletter",
+    "newsletterDesc": "Subscribe to receive updates on my latest projects and articles.",
+    "emailPlaceholder": "Your email address",
+    "subscribe": "Subscribe"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "features": "Features"
+  }
+}
