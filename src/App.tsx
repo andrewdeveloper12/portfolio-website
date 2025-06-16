@@ -49,7 +49,7 @@ const WelcomeScreen: React.FC<{ onComplete: () => void }> = ({ onComplete }) => 
             >
               <div className="w-full h-full rounded-full bg-gradient-bg flex items-center justify-center">
                 <img
-                  src="/andrew.png.jpg"
+                  src="andrew.png.jpg"
                   alt={t('hero.name')}
                   className="w-28 h-28 sm:w-36 sm:h-36 rounded-full object-cover"
                 />

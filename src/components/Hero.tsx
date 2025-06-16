@@ -154,7 +154,7 @@ const Hero: React.FC = () => {
               </motion.div>
               <div className="relative overflow-hidden w-full h-full aspect-square border-4 border-white/20 shadow-2xl rounded-lg">
                 <img
-                  src="/andrew.png.jpg"
+                  src="andrew.png.jpg"
                   alt={t('hero.name')}
                   className="w-full h-full object-cover object-center"
                   style={{ objectPosition: 'center center' }}
