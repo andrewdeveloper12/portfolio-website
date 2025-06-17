@@ -31,14 +31,14 @@ const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center gradient-bg text-white overflow-hidden relative"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-900 to-blue-800 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-white overflow-hidden relative"
     >
       {/* Bubbles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(15)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute rounded-full bg-white/10 backdrop-blur-sm"
+            className="absolute rounded-full bg-white/10 dark:bg-white/5 backdrop-blur-sm"
             style={{
               width: Math.min(Math.random() * 60 + 20, 80),
               height: Math.min(Math.random() * 60 + 20, 80),
@@ -68,11 +68,11 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, x: isRTL ? 50 : -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="lg:w-1/2 text-center lg:text-left"
+            className={`lg:w-1/2 text-center ${isRTL ? 'lg:text-right' : 'lg:text-left'}`}
             style={{ direction: isRTL ? 'rtl' : 'ltr' }}
           >
             <motion.p
-              className="text-lg sm:text-xl md:text-2xl mb-6 text-purple-200 font-medium"
+              className="text-lg sm:text-xl md:text-2xl mb-6 text-purple-200 dark:text-purple-400 font-medium"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
@@ -90,7 +90,7 @@ const Hero: React.FC = () => {
             </motion.h1>
 
             <motion.h2
-              className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-8 text-purple-100"
+              className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-8 text-purple-100 dark:text-purple-300"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7, duration: 0.8 }}
@@ -101,7 +101,9 @@ const Hero: React.FC = () => {
             </motion.h2>
 
             <motion.p
-              className="text-base sm:text-lg md:text-xl mb-12 text-purple-100 max-w-lg mx-auto lg:mx-0 leading-relaxed"
+              className={`text-base sm:text-lg md:text-xl mb-12 text-purple-100 dark:text-purple-300 max-w-lg leading-relaxed ${
+                isRTL ? 'mx-auto lg:mr-0 lg:ml-auto' : 'mx-auto lg:mx-0'
+              }`}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.9, duration: 0.8 }}
@@ -111,8 +113,10 @@ const Hero: React.FC = () => {
 
             {/* Buttons */}
             <motion.div
-              className={`flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8 ${
-                isRTL ? 'sm:flex-row-reverse' : ''
+              className={`flex flex-col sm:flex-row gap-4 mb-8 ${
+                isRTL 
+                  ? 'justify-center lg:justify-end sm:flex-row-reverse' 
+                  : 'justify-center lg:justify-start'
               }`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -127,7 +131,7 @@ const Hero: React.FC = () => {
                 {t('hero.viewWork')}
               </motion.button>
               <motion.button
-                className="w-full sm:w-auto px-8 py-4 border-2 border-white rounded-lg font-medium hover:bg-white hover:text-purple-600 transition-all"
+                className="w-full sm:w-auto px-8 py-4 border-2 border-white rounded-lg font-medium hover:bg-white hover:text-purple-600 dark:hover:text-purple-400 transition-all"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => scrollToSection('contact')}
@@ -184,8 +188,8 @@ const Hero: React.FC = () => {
 
       {/* Background Decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-pink-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500/10 dark:bg-purple-900/20 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-pink-500/10 dark:bg-pink-900/20 rounded-full blur-3xl"></div>
       </div>
     </section>
   );

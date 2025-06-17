@@ -58,7 +58,7 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <section id="services" className="section-padding bg-white">
+    <section id="services" className="section-padding bg-white  dark:bg-black">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -70,7 +70,7 @@ const Services: React.FC = () => {
           <h2 className="text-4xl md:text-4xl font-bold mb-6 text-gradient">
             {t('services.title')}
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto  text-black dark:!text-white">
             {t('services.description')}
           </p>
         </motion.div>
@@ -150,30 +150,29 @@ const Services: React.FC = () => {
           viewport={{ once: true }}
           className="mt-20 text-center"
         >
-          <h3 className="text-3xl font-bold mb-12 text-gray-800">
-            {t('services.process.title')}
-          </h3>
-          
-          <div className="grid md:grid-cols-4 gap-8">
-            {Object.values(t('services.process.steps', { returnObjects: true })).map((step: any, index: number) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="relative"
-              >
-                <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 font-bold text-lg">
-                  {`0${index + 1}`}
-                </div>
-                <h4 className="text-xl font-semibold mb-2 text-gray-800">{step.title}</h4>
-                <p className="text-gray-600">{step.description}</p>
-                
-               
-              </motion.div>
-            ))}
-          </div>
+         <h3 className="text-3xl font-bold mb-12 text-gray-800 dark:text-white">
+  {t('services.process.title')}
+</h3>
+
+<div className="grid md:grid-cols-4 gap-8">
+  {Object.values(t('services.process.steps', { returnObjects: true })).map((step: any, index: number) => (
+    <motion.div
+      key={index}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: index * 0.1 }}
+      viewport={{ once: true }}
+      className="relative"
+    >
+      <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 font-bold text-lg">
+        {`0${index + 1}`}
+      </div>
+      <h4 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">{step.title}</h4>
+      <p className="text-gray-600 dark:text-gray-300">{step.description}</p>
+    </motion.div>
+  ))}
+</div>
+
         </motion.div>
       </div>
     </section>

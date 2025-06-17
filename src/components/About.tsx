@@ -32,7 +32,7 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="section-padding bg-gray-50">
+    <section id="about" className="section-padding bg-gray-50  dark:bg-black">
       <div className="container mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <motion.div
@@ -45,7 +45,7 @@ const About: React.FC = () => {
           <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-4 sm:mb-6 text-gradient">
             {t('about.title')}
           </h2>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4  text-black dark:!text-white">
             {t('about.description')}
           </p>
         </motion.div>
@@ -139,7 +139,7 @@ const About: React.FC = () => {
             viewport={{ once: true }}
             className="space-y-4 sm:space-y-6 order-1 lg:order-2 px-4 lg:px-0"
           >
-            <h3 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-gradient">
+            <h3 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-gradient ">
               {t('about.story.title')}
             </h3>
             
@@ -148,7 +148,7 @@ const About: React.FC = () => {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.6 }}
               viewport={{ once: true }}
-              className="text-gray-600 text-base sm:text-lg leading-relaxed"
+              className="text-gray-600 text-base sm:text-lg leading-relaxed  text-black dark:!text-white"
             >
               {t('about.story.paragraph1')}
             </motion.p>
@@ -158,7 +158,7 @@ const About: React.FC = () => {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.6 }}
               viewport={{ once: true }}
-              className="text-gray-600 text-base sm:text-lg leading-relaxed"
+              className="text-gray-600 text-base sm:text-lg leading-relaxed  text-black dark:!text-white"
             >
               {t('about.story.paragraph2')}
             </motion.p>
@@ -168,7 +168,7 @@ const About: React.FC = () => {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.6, duration: 0.6 }}
               viewport={{ once: true }}
-              className="text-gray-600 text-base sm:text-lg leading-relaxed"
+              className="text-gray-600 text-base sm:text-lg leading-relaxed  text-black dark:!text-white"
             >
               {t('about.story.paragraph3')}
             </motion.p>

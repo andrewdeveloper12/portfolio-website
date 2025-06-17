@@ -2,10 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 
-// Import i18n configuration
 import './i18n';
-
-// Import components
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -15,7 +12,6 @@ import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-// Welcome Screen Component
 const WelcomeScreen: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
   const { t } = useTranslation();
 
@@ -38,13 +34,13 @@ const WelcomeScreen: React.FC<{ onComplete: () => void }> = ({ onComplete }) => 
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
           className="mb-8"
         >
           <div className="relative">
             <motion.div
               animate={{ rotate: 360 }}
-              transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+              transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
               className="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 p-1 mx-auto"
             >
               <div className="w-full h-full rounded-full bg-gradient-bg flex items-center justify-center">
@@ -90,7 +86,6 @@ const WelcomeScreen: React.FC<{ onComplete: () => void }> = ({ onComplete }) => 
         </motion.div>
       </div>
 
-      {/* Animated background bubbles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(10)].map((_, i) => (
           <motion.div
@@ -111,7 +106,7 @@ const WelcomeScreen: React.FC<{ onComplete: () => void }> = ({ onComplete }) => 
             transition={{
               duration: 4 + Math.random() * 2,
               repeat: Infinity,
-              ease: "easeInOut",
+              ease: 'easeInOut',
               delay: i * 0.2,
             }}
           />
@@ -126,7 +121,6 @@ function App() {
   const [showWelcome, setShowWelcome] = useState(true);
 
   useEffect(() => {
-    // Set document direction based on language
     const isRTL = i18n.language === 'ar';
     document.dir = isRTL ? 'rtl' : 'ltr';
     document.documentElement.lang = i18n.language;
@@ -137,7 +131,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white text-black dark:bg-black dark:text-white transition-colors duration-300">
       <AnimatePresence mode="wait">
         {showWelcome ? (
           <WelcomeScreen key="welcome" onComplete={handleWelcomeComplete} />

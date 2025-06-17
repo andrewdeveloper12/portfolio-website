@@ -36,7 +36,7 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <section id="skills" className="section-padding bg-white">
+    <section id="skills" className="section-padding bg-white  dark:bg-black">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -48,7 +48,7 @@ const Skills: React.FC = () => {
           <h2 className="text-4xl md:text-4xl font-bold mb-6 text-gradient">
             {t('skills.title')}
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto  text-black dark:!text-white">
             {t('skills.subtitle')}
           </p>
         </motion.div>
@@ -118,7 +118,7 @@ const Skills: React.FC = () => {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <h3 className="text-2xl font-bold mb-8 text-gray-800">
+          <h3 className="text-2xl font-bold mb-8 text-gray-800  text-black dark:!text-white">
             Technologies I Work With
           </h3>
           

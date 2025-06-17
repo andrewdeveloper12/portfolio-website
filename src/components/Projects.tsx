@@ -64,7 +64,7 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <section id="projects" className="section-padding bg-gray-50">
+    <section id="projects" className="section-padding bg-gray-50  dark:bg-black" >
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -76,7 +76,7 @@ const Projects: React.FC = () => {
           <h2 className="text-4xl md:text-4xl font-bold mb-6 text-gradient">
             {t('projects.title')}
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto  text-black dark:!text-white">
             {t('projects.subtitle')}
           </p>
         </motion.div>

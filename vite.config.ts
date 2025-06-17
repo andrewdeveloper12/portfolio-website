@@ -1,11 +1,11 @@
+// vite.config.ts
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  base: '/portfolio-website/', // 👈 اسم الريبو هنا مهم جداً
+  base: '/portfolio-website/', // ✳️ غيّرها لاسم الريبو على GitHub Pages لو حابب
   plugins: [react()],
   optimizeDeps: {
-    exclude: ['lucide-react'],
+    exclude: ['lucide-react'], // هذا السطر لحل مشكلة import لـ lucide-react
   },
 });
