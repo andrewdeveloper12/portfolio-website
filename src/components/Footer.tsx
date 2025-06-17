@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { 
   Github, 
   Linkedin, 
-  Twitter, 
+  Facebook, 
   Mail, 
   Phone, 
   MapPin,
@@ -29,18 +29,16 @@ const Footer: React.FC = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Mail, href: 'mailto:andrew.osama@example.com', label: 'Email' }
+    { icon: Github, href: 'https://github.com/andrewdeveloper12', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/feed/', label: 'LinkedIn' },
+    { icon: Facebook, href: 'https://www.facebook.com/share/1CGdwoAWSw/', label: 'Facebook' },
+    { icon: Mail, href: 'mailto:andrewdematry@gmail.com', label: 'Email' }
   ];
 
   return (
     <footer className="bg-gray-900 text-white">
-      {/* Main Footer Content */}
       <div className="container mx-auto px-4 sm:px-6 py-12 sm:py-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-          {/* About Section */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -49,7 +47,7 @@ const Footer: React.FC = () => {
             className="lg:col-span-2"
           >
             <div className="mb-6">
-              <h3 className="text-xl sm:text-2xl font-bold mb-4 text-gradient-white">
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
                 {t('hero.name')}
               </h3>
               <p className="text-gray-400 leading-relaxed max-w-md text-sm sm:text-base">
@@ -57,15 +55,14 @@ const Footer: React.FC = () => {
               </p>
             </div>
 
-            {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-gray-400 text-sm sm:text-base">
                 <Mail size={16} />
-                <span>andrew.osama@example.com</span>
+                <span>andrewdematry@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-400 text-sm sm:text-base">
                 <Phone size={16} />
-                <span>+20 123 456 7890</span>
+                <span>+201201082243</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-400 text-sm sm:text-base">
                 <MapPin size={16} />
@@ -74,7 +71,6 @@ const Footer: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Quick Links */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -106,7 +102,6 @@ const Footer: React.FC = () => {
             </ul>
           </motion.div>
 
-          {/* Newsletter */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -119,7 +114,7 @@ const Footer: React.FC = () => {
             <p className="text-gray-400 mb-4 text-sm">
               {t('footer.newsletterDesc')}
             </p>
-            
+
             <div className="space-y-3">
               <input
                 type="email"
@@ -137,7 +132,6 @@ const Footer: React.FC = () => {
           </motion.div>
         </div>
 
-        {/* Social Links */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -151,6 +145,8 @@ const Footer: React.FC = () => {
                 <motion.a
                   key={index}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   className="p-3 bg-gray-800 hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-600 rounded-full transition-all duration-300"
@@ -174,7 +170,6 @@ const Footer: React.FC = () => {
         </motion.div>
       </div>
 
-      {/* Bottom Bar */}
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -187,23 +182,12 @@ const Footer: React.FC = () => {
             <p className="text-gray-400 text-xs sm:text-sm flex items-center">
               © 2024 {t('hero.name')}. {t('footer.rights')}
             </p>
-            
             <p className="text-gray-400 text-xs sm:text-sm flex items-center">
               Made with <Heart className="text-red-500 mx-1" size={16} fill="currentColor" /> by {t('hero.name')}
             </p>
           </div>
         </div>
       </motion.div>
-
-      {/* Custom CSS for gradient text */}
-      <style jsx>{`
-        .text-gradient-white {
-          background: linear-gradient(135deg, #fff 0%, #e5e7eb 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-        }
-      `}</style>
     </footer>
   );
 };
