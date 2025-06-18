@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
         ))}
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-8 sm:py-12">
         <div
           className={`flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 ${
             isRTL ? 'lg:flex-row-reverse' : ''
@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
             style={{ direction: isRTL ? 'rtl' : 'ltr' }}
           >
             <motion.p
-              className="text-lg sm:text-xl md:text-2xl mb-6 text-purple-200 dark:text-purple-400 font-medium"
+              className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 text-purple-200 dark:text-purple-400 font-medium"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
@@ -81,7 +81,7 @@ const Hero: React.FC = () => {
             </motion.p>
 
             <motion.h1
-              className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight break-words text-balance"
+              className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 leading-tight break-words text-balance"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.5, duration: 0.8 }}
@@ -90,7 +90,7 @@ const Hero: React.FC = () => {
             </motion.h1>
 
             <motion.h2
-              className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-8 text-purple-100 dark:text-purple-300"
+              className="text-xl sm:text-2xl md:text-3xl font-semibold mb-6 sm:mb-8 text-purple-100 dark:text-purple-300"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7, duration: 0.8 }}
@@ -101,7 +101,7 @@ const Hero: React.FC = () => {
             </motion.h2>
 
             <motion.p
-              className={`text-base sm:text-lg md:text-xl mb-12 text-purple-100 dark:text-purple-300 max-w-lg leading-relaxed ${
+              className={`text-sm sm:text-base md:text-lg mb-8 sm:mb-12 text-purple-100 dark:text-purple-300 max-w-lg leading-relaxed ${
                 isRTL ? 'mx-auto lg:mr-0 lg:ml-auto' : 'mx-auto lg:mx-0'
               }`}
               initial={{ opacity: 0 }}
@@ -123,7 +123,7 @@ const Hero: React.FC = () => {
               transition={{ delay: 1.1, duration: 0.8 }}
             >
               <motion.button
-                className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all"
+                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => scrollToSection('projects')}
@@ -131,7 +131,7 @@ const Hero: React.FC = () => {
                 {t('hero.viewWork')}
               </motion.button>
               <motion.button
-                className="w-full sm:w-auto px-8 py-4 border-2 border-white rounded-lg font-medium hover:bg-white hover:text-purple-600 dark:hover:text-purple-400 transition-all"
+                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base border-2 border-white rounded-lg font-medium hover:bg-white hover:text-purple-600 dark:hover:text-purple-400 transition-all"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => scrollToSection('contact')}
@@ -148,7 +148,7 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            <div className="relative w-full max-w-[300px] sm:max-w-[350px] md:max-w-[400px]">
+            <div className="relative w-full max-w-[220px] sm:max-w-[300px] md:max-w-[400px]">
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
