@@ -1,17 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-<<<<<<< HEAD
-import { 
-  Github, 
-  Linkedin, 
-  Facebook, 
-  Mail, 
-  Phone, 
-  MapPin,
-  Heart,
-  ArrowUp
-=======
 import {
   Github,
   Linkedin,
@@ -25,7 +14,6 @@ import {
   Palette,
   Database,
   Send
->>>>>>> 64b7339 (first deploy)
 } from 'lucide-react';
 
 const Footer: React.FC = () => {
@@ -44,168 +32,6 @@ const Footer: React.FC = () => {
     { key: 'contact', href: '#contact' }
   ];
 
-<<<<<<< HEAD
-  const socialLinks = [
-    { icon: Github, href: 'https://github.com/andrewdeveloper12', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/feed/', label: 'LinkedIn' },
-    { icon: Facebook, href: 'https://www.facebook.com/share/1CGdwoAWSw/', label: 'Facebook' },
-    { icon: Mail, href: 'mailto:andrewdematry@gmail.com', label: 'Email' }
-  ];
-
-  return (
-    <footer className="bg-gray-900 text-white  dark:bg-black">
-      <div className="container mx-auto px-4 sm:px-6 py-12 sm:py-16">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="lg:col-span-2"
-          >
-            <div className="mb-6">
-              <h3 className="text-xl sm:text-2xl font-bold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                {t('hero.name')}
-              </h3>
-              <p className="text-gray-400 leading-relaxed max-w-md text-sm sm:text-base">
-                {t('footer.contactDescription')}
-              </p>
-            </div>
-
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3 text-gray-400 text-sm sm:text-base">
-                <Mail size={16} />
-                <span>andrewdematry@gmail.com</span>
-              </div>
-              <div className="flex items-center space-x-3 text-gray-400 text-sm sm:text-base">
-                <Phone size={16} />
-                <span>+201201082243</span>
-              </div>
-              <div className="flex items-center space-x-3 text-gray-400 text-sm sm:text-base">
-                <MapPin size={16} />
-                <span>{t('contact.details.city')}</span>
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            viewport={{ once: true }}
-          >
-            <h4 className="text-lg font-semibold mb-6">
-              {t('footer.importantLinks')}
-            </h4>
-            <ul className="space-y-3">
-              {quickLinks.map((link) => (
-                <li key={link.key}>
-                  <motion.a
-                    href={link.href}
-                    whileHover={{ x: isRTL ? -5 : 5, color: '#8B5CF6' }}
-                    className="text-gray-400 hover:text-purple-400 transition-colors duration-200 cursor-pointer text-sm sm:text-base"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      const element = document.querySelector(link.href);
-                      if (element) {
-                        element.scrollIntoView({ behavior: 'smooth' });
-                      }
-                    }}
-                  >
-                    {t(`nav.${link.key}`)}
-                  </motion.a>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            <h4 className="text-lg font-semibold mb-6">
-              {t('footer.newsletter')}
-            </h4>
-            <p className="text-gray-400 mb-4 text-sm">
-              {t('footer.newsletterDesc')}
-            </p>
-
-            <div className="space-y-3">
-              <input
-                type="email"
-                placeholder={t('footer.emailPlaceholder')}
-                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm"
-              />
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-2 px-4 rounded-lg font-medium text-sm transition-all duration-200"
-              >
-                {t('footer.subscribe')}
-              </motion.button>
-            </div>
-          </motion.div>
-        </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          viewport={{ once: true }}
-          className="mt-12 pt-8 border-t border-gray-800"
-        >
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className={`flex gap-3 sm:gap-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
-              {socialLinks.map((social, index) => (
-                <motion.a
-                  key={index}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="p-3 bg-gray-800 hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-600 rounded-full transition-all duration-300"
-                  aria-label={social.label}
-                >
-                  <social.icon size={18} className="sm:w-5 sm:h-5" />
-                </motion.a>
-              ))}
-            </div>
-
-            <motion.button
-              onClick={scrollToTop}
-              whileHover={{ scale: 1.1, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              className="p-3 bg-gray-800 hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-600 rounded-full transition-all duration-300"
-              aria-label="Back to top"
-            >
-              <ArrowUp size={18} className="sm:w-5 sm:h-5" />
-            </motion.button>
-          </div>
-        </motion.div>
-      </div>
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.4 }}
-        viewport={{ once: true }}
-        className="border-t border-gray-800 py-6"
-      >
-        <div className="container mx-auto px-4 sm:px-6">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
-            <p className="text-gray-400 text-xs sm:text-sm flex items-center">
-              © 2024 {t('hero.name')}. {t('footer.rights')}
-            </p>
-            <p className="text-gray-400 text-xs sm:text-sm flex items-center">
-              Made with <Heart className="text-red-500 mx-1" size={16} fill="currentColor" /> by {t('hero.name')}
-            </p>
-          </div>
-        </div>
-      </motion.div>
-=======
   const services = [
     { icon: Code, name: 'Frontend Development', color: 'text-blue-400' },
     { icon: Database, name: 'Backend Development', color: 'text-green-400' },
@@ -299,14 +125,14 @@ const Footer: React.FC = () => {
                     className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent"
                     whileHover={{ scale: 1.02 }}
                   >
-                    Andrew Dematry
+                    {t('hero.name')}
                   </motion.h3>
-                  <p className="text-gray-400 text-xs sm:text-sm">Full Stack Developer</p>
+                  <p className="text-gray-400 text-xs sm:text-sm">{t('hero.title')}</p>
                 </div>
               </div>
 
               <p className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed max-w-md">
-                Crafting digital experiences with passion and precision. Let's build something amazing together.
+                {t('footer.contactDescription')}
               </p>
 
               {/* Contact Info - Responsive Stack */}
@@ -314,7 +140,7 @@ const Footer: React.FC = () => {
                 {[
                   { icon: Mail, text: "andrewdematry@gmail.com", href: "mailto:andrewdematry@gmail.com" },
                   { icon: Phone, text: "+201201082243", href: "tel:+201201082243" },
-                  { icon: MapPin, text: "Cairo, Egypt", href: "#" }
+                  { icon: MapPin, text: t('contact.details.city'), href: "#" }
                 ].map((contact, index) => (
                   <motion.div
                     key={index}
@@ -336,7 +162,7 @@ const Footer: React.FC = () => {
             {/* Services Section - Responsive */}
             <motion.div variants={itemVariants} className="space-y-4 sm:space-y-6">
               <h4 className="text-lg sm:text-xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                Services
+                {t('footer.services')}
               </h4>
               <div className="space-y-3 sm:space-y-4">
                 {services.map((service, index) => (
@@ -357,7 +183,7 @@ const Footer: React.FC = () => {
             {/* Quick Links - Responsive */}
             <motion.div variants={itemVariants} className="space-y-4 sm:space-y-6">
               <h4 className="text-lg sm:text-xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                Quick Links
+                {t('footer.importantLinks')}
               </h4>
               <ul className="space-y-2 sm:space-y-3">
                 {quickLinks.map((link) => (
@@ -375,7 +201,7 @@ const Footer: React.FC = () => {
                       }}
                     >
                       <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-purple-400 transition-colors duration-300 flex-shrink-0"></span>
-                      <span className="capitalize">{link.key}</span>
+                      <span className="capitalize">{t(`nav.${link.key}`)}</span>
                     </motion.a>
                   </li>
                 ))}
@@ -390,17 +216,17 @@ const Footer: React.FC = () => {
           >
             <div className="max-w-2xl mx-auto text-center">
               <h4 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                Stay Updated
+                {t('footer.newsletter')}
               </h4>
               <p className="text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base">
-                Subscribe to get the latest updates on new projects and tech insights.
+                {t('footer.newsletterDesc')}
               </p>
               
               {/* Newsletter Form - Responsive */}
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-md mx-auto">
                 <input
                   type="email"
-                  placeholder="Enter your email"
+                  placeholder={t('footer.emailPlaceholder')}
                   className="flex-1 px-3 sm:px-4 py-2 sm:py-3 bg-gray-800/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-white placeholder-gray-400 backdrop-blur-sm text-sm sm:text-base"
                 />
                 <motion.button
@@ -409,7 +235,7 @@ const Footer: React.FC = () => {
                   className="px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg font-medium transition-all duration-200 flex items-center justify-center space-x-2 hover:shadow-lg hover:shadow-purple-500/25 text-sm sm:text-base"
                 >
                   <Send size={14} className="sm:w-4 sm:h-4" />
-                  <span>Subscribe</span>
+                  <span>{t('footer.subscribe')}</span>
                 </motion.button>
               </div>
             </div>
@@ -464,7 +290,7 @@ const Footer: React.FC = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0 text-center sm:text-left">
               <p className="text-gray-400 text-xs sm:text-sm flex items-center">
-                © 2024 Andrew Osama. All rights reserved.
+                © 2024 {t('hero.name')}. {t('footer.rights')}
               </p>
               <motion.p
                 className="text-gray-400 text-xs sm:text-sm flex items-center"
@@ -477,19 +303,14 @@ const Footer: React.FC = () => {
                 >
                   <Heart className="text-red-500 mx-1" size={14} fill="currentColor" />
                 </motion.span>
-                {' '}by Andrew Osama
+                {' '}by {t('hero.name')}
               </motion.p>
             </div>
           </div>
         </motion.div>
       </div>
->>>>>>> 64b7339 (first deploy)
     </footer>
   );
 };
 
-<<<<<<< HEAD
 export default Footer;
-=======
-export default Footer;
->>>>>>> 64b7339 (first deploy)

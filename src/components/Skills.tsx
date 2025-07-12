@@ -36,11 +36,7 @@ const Skills: React.FC = () => {
   ];
 
   return (
-<<<<<<< HEAD
-    <section id="skills" className="section-padding bg-white  dark:bg-black">
-=======
-    <section id="skills" className="section-padding bg-white  dark:bg-black pt-2">
->>>>>>> 64b7339 (first deploy)
+    <section id="skills" className="section-padding bg-white dark:bg-black pt-12">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -52,7 +48,7 @@ const Skills: React.FC = () => {
           <h2 className="text-4xl md:text-4xl font-bold mb-6 text-gradient">
             {t('skills.title')}
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto  text-black dark:!text-white">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto text-black dark:!text-white">
             {t('skills.subtitle')}
           </p>
         </motion.div>
@@ -122,7 +118,7 @@ const Skills: React.FC = () => {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <h3 className="text-2xl font-bold mb-8 text-gray-800  text-black dark:!text-white">
+          <h3 className="text-2xl font-bold mb-8 text-gray-800 text-black dark:!text-white">
             Technologies I Work With
           </h3>
           
@@ -130,7 +126,7 @@ const Skills: React.FC = () => {
             {[
               'JavaScript', 'HTML5', 'CSS3',
               'SASS', 'Bootstrap',
-              'Firebase',  'Vercel', 'Photoshop'
+              'Firebase', 'Vercel', 'Photoshop'
             ].map((tech, index) => (
               <motion.span
                 key={index}
