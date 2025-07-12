@@ -62,7 +62,11 @@ const Contact: React.FC = () => {
   const benefits = t('contact.benefits', { returnObjects: true }) as string[];
 
   return (
+<<<<<<< HEAD
     <section id="contact" className="section-padding bg-gray-50 dark:bg-black">
+=======
+    <section id="contact" className="section-padding bg-gray-50 dark:bg-black pt-3">
+>>>>>>> 64b7339 (first deploy)
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

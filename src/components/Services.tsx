@@ -58,7 +58,11 @@ const Services: React.FC = () => {
   ];
 
   return (
+<<<<<<< HEAD
     <section id="services" className="section-padding bg-white  dark:bg-black">
+=======
+    <section id="services" className="section-padding bg-white  dark:bg-black pt-2 ">
+>>>>>>> 64b7339 (first deploy)
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -150,7 +154,11 @@ const Services: React.FC = () => {
           viewport={{ once: true }}
           className="mt-20 text-center"
         >
+<<<<<<< HEAD
          <h3 className="text-3xl font-bold mb-12 text-gray-800 dark:text-white">
+=======
+         {/* <h3 className="text-3xl font-bold mb-12 text-gray-800 dark:text-white">
+>>>>>>> 64b7339 (first deploy)
   {t('services.process.title')}
 </h3>
 
@@ -171,7 +179,11 @@ const Services: React.FC = () => {
       <p className="text-gray-600 dark:text-gray-300">{step.description}</p>
     </motion.div>
   ))}
+<<<<<<< HEAD
 </div>
+=======
+</div> */}
+>>>>>>> 64b7339 (first deploy)
 
         </motion.div>
       </div>

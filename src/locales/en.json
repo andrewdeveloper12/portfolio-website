@@ -14,6 +14,7 @@
     "title": "Professional Web Developer",
     "description": "I develop modern and interactive web applications using the latest technologies",
     "viewWork": "View Work",
+<<<<<<< HEAD
     "contactMe": "Contact Me"
   },
   "about": {
@@ -36,17 +37,58 @@
         "description": "Building optimized applications that load quickly and run smoothly"
       }
     },
+=======
+    "contactMe": "Download CV"
+  },
+"about": {
+    "badge": "Professional Developer",
+    "title": "Who I Am",
+    "description": "A passionate frontend developer creating beautiful, functional digital experiences",
+>>>>>>> 64b7339 (first deploy)
     "stats": {
       "experience": "Years of Experience",
       "projects": "Completed Projects",
       "clients": "Happy Clients",
       "coffee": "Cups of Coffee"
     },
+<<<<<<< HEAD
     "story": {
       "title": "My Journey",
       "paragraph1": "My journey in programming began over 3 years ago, developing skills across modern technologies.",
       "paragraph2": "I believe continuous learning is key to success, always staying updated with tech advancements.",
       "paragraph3": "My goal is to create innovative solutions that help clients achieve their business objectives."
+=======
+    "bio": {
+      "greeting": "Andrew Osama",
+      "paragraph1": "Hello, my name is Andrew Osama, a dedicated web designer specializing in front-end development with a strong foundation in computer science. I have a passion for creating visually appealing. My skill set combines creativity with technical expertise, allowing me to build experiences that are both engaging and efficient.",
+      "paragraph2": "Currently, I’m focused on enhancing my skills in Angular and React, which has enabled me to deliver faster, more interactive web experiences. I pride myself on my attention to detail and my ability to transform complex concepts into simple, impactful designs.I aim to bring ideas to life in a way that resonates with users, combining aesthetics with functionality for memorable digital experiences. ",
+      "paragraph3": " "
+    },
+    "certificates": {
+      "title": "My Certifications"
+    },
+    "features": {
+      "sectionTitle": "What I Excel At",
+      "sectionDescription": "Combining technical expertise with creative design to deliver exceptional results",
+      "cleanCode": {
+        "title": "Clean Code",
+        "description": "I write clean, maintainable code following best practices and industry standards."
+      },
+      "creativeDesign": {
+        "title": "Creative Design",
+        "description": "Eye-catching designs that capture attention while maintaining usability."
+      },
+      "fastPerformance": {
+        "title": "Fast Performance",
+        "description": "Optimized websites that load quickly and provide smooth user experiences."
+      }
+    },
+    "story": {
+      "title": "My Journey",
+      "paragraph1": "Since I was a child, I have always been amazed by how things work. This curiosity has turned into a genuine passion for innovation and problem-solving.Today, I strive to build useful, user-focused applications that make a difference.",
+      "paragraph2": "My journey in web development began with simple HTML pages. Over time, I discovered JavaScript and React, as well as server technologies like Node.js and MongoDB. ",
+      "paragraph3": "Every line of code I write represents a part of my story — and I'm still at the beginning."
+>>>>>>> 64b7339 (first deploy)
     }
   },
   "skills": {
@@ -54,7 +96,11 @@
     "subtitle": "Technologies and tools I use to build projects"
   },
  "projects": {
+<<<<<<< HEAD
     "title": "My Projects",
+=======
+    "title": "My Projects", 
+>>>>>>> 64b7339 (first deploy)
     "subtitle": "Here are some of my recent projects. Each one represents a unique challenge and solution.",
     "code": "Code",
     "demo": "Demo",
@@ -62,7 +108,11 @@
     "items": [
       {
         "title": "Yummy Restaurant App",
+<<<<<<< HEAD
         "description": "A food ordering application with menu browsing, cart functionality, and order tracking."
+=======
+        "description": "A food ordering application with menu browsing, cart functionality."
+>>>>>>> 64b7339 (first deploy)
       },
       {
         "title": "Mealify Food Delivery",

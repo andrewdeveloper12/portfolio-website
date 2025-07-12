@@ -36,7 +36,11 @@ const Skills: React.FC = () => {
   ];
 
   return (
+<<<<<<< HEAD
     <section id="skills" className="section-padding bg-white  dark:bg-black">
+=======
+    <section id="skills" className="section-padding bg-white  dark:bg-black pt-2">
+>>>>>>> 64b7339 (first deploy)
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

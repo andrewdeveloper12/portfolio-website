@@ -10,7 +10,11 @@ const Projects: React.FC = () => {
     {
       title: t('projects.items.0.title'),
       description: t('projects.items.0.description'),
+<<<<<<< HEAD
       image: 'favicon (1).png',
+=======
+      image: 'ea1.png',
+>>>>>>> 64b7339 (first deploy)
       tags: ['React', 'TypeScript', 'Tailwind CSS', 'Firebase'],
       github: 'https://github.com/andrewdeveloper12/yummyyy.git',
       demo: 'https://andrewdeveloper12.github.io/yummyyy/',
@@ -19,7 +23,11 @@ const Projects: React.FC = () => {
     {
       title: t('projects.items.1.title'),
       description: t('projects.items.1.description'),
+<<<<<<< HEAD
       image: 'hero-img.png',
+=======
+      image: 'ea2.png',
+>>>>>>> 64b7339 (first deploy)
       tags: ['React.js', 'Node.js', 'MongoDB', 'Stripe'],
       github: 'https://github.com/andrewdeveloper12/Mealify.git',
       demo: 'https://andrewdeveloper12.github.io/Mealify/',
@@ -41,7 +49,11 @@ const Projects: React.FC = () => {
       tags: ['React.js', 'Express.js', 'PostgreSQL', 'Chart.js'],
       github: 'https://github.com/andrewdeveloper12/project-gg.git',
       demo: 'https://checkup.techlabeg.com/#/',
+<<<<<<< HEAD
       date: '2023'
+=======
+      date: '2025'
+>>>>>>> 64b7339 (first deploy)
     },
     {
       title: t('projects.items.4.title'),
